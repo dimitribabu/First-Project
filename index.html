@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="button">
+        <button type="button" onclick="changeBackColor()">Change Background Color</button>
+    </div>
+    <main class="main">
+        <div>
+            <h1 class="about-me">About Me</h1>
+            <div class="sub-content-wrapper">
+                <h3 class="sub-header">EMAIL</h3>
+                <p class="info">ditobabunadze@gmail.com</p>
+            </div>
+            <div class="sub-content-wrapper">
+                <h3 class="sub-header">ROLE</h3>
+                <p class="info">Junior Front-end Developer</p>
+            </div>
+            <div class="sub-content-wrapper">
+                <h3 class="sub-header">PHONE</h3>
+                <p class="info">592 18 96 19</p>
+            </div>
+        </div>
+        <div class="imageContainer">
+            <img width="300" height="300" src="assets/dima.jpg"/>
+        </div>
+    </main>
+    <script>
+        function changeBackColor(){
+            document.body.style.backgroundColor = "#7d7d7d";
+            document.getElementsByClassName("main")[0].style.backgroundColor = "#7d7d7d";
+        }
+    </script>
+</body>
+</html>
